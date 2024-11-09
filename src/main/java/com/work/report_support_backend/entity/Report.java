@@ -2,9 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.work.report_support_backend;
+package com.work.report_support_backend.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.work.report_support_backend.enumeration.Project;
 import java.util.UUID;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -45,7 +46,7 @@ public class Report {
     
     private Project project;
 
-    Report() {
+    public Report() {
     }
 
     public Report(UUID uid, String partnerName, int supportTime, Date supportDate, Date startingHour, Date endingHour, Project project) {
